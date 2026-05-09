@@ -26,6 +26,8 @@
     --primary-soft: #ffe1ea;
     --done: #4f9c5e;
     --done-soft: #e1f1e3;
+    --wish: #d11e68;
+    --wish-soft: #ffe1ea;
     --route: #6a5acd;
     --route-soft: #e7e3fa;
     --shadow-sm: 0 1px 2px rgba(42,29,18,.06);
@@ -39,14 +41,11 @@
   html, body { height: 100%; margin: 0; }
   body {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: var(--ink);
-    background: var(--bg);
+    font-size: 15px; line-height: 1.5;
+    color: var(--ink); background: var(--bg);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  .display { font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 700; letter-spacing: -0.01em; }
 
   .topbar {
     position: sticky; top: 0; z-index: 600;
@@ -62,18 +61,15 @@
     display: flex; align-items: center; gap: 10px;
     font-family: "Fraunces", Georgia, serif;
     font-style: italic; font-weight: 700;
-    font-size: 22px;
-    color: var(--ink);
-    text-decoration: none;
-    letter-spacing: -0.015em;
+    font-size: 22px; color: var(--ink);
+    text-decoration: none; letter-spacing: -0.015em;
     flex: 0 0 auto;
   }
   .brand .scoop {
     width: 32px; height: 32px;
     display: grid; place-items: center;
     background: linear-gradient(135deg, #ffd1dd, #ff95b3);
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 50%; font-size: 18px;
     box-shadow: var(--shadow-sm);
   }
   .brand .yr {
@@ -84,60 +80,41 @@
   .spacer { flex: 1; }
 
   .tabs {
-    background: var(--bg-2);
-    border-radius: 999px;
-    padding: 4px;
-    display: flex; gap: 2px;
-    border: 1px solid var(--border);
+    background: var(--bg-2); border-radius: 999px; padding: 4px;
+    display: flex; gap: 2px; border: 1px solid var(--border);
   }
   .tabs a {
-    padding: 8px 18px;
-    border-radius: 999px;
-    text-decoration: none;
-    color: var(--ink-2);
+    padding: 8px 18px; border-radius: 999px;
+    text-decoration: none; color: var(--ink-2);
     font-weight: 500; font-size: 14px;
     transition: background .18s ease, color .18s ease, transform .18s ease;
     display: inline-flex; align-items: center; gap: 6px;
   }
   .tabs a:hover { color: var(--ink); }
   .tabs a.active {
-    background: var(--surface);
-    color: var(--ink);
-    box-shadow: var(--shadow-sm);
-    font-weight: 600;
+    background: var(--surface); color: var(--ink);
+    box-shadow: var(--shadow-sm); font-weight: 600;
   }
   .tabs a svg { width: 14px; height: 14px; }
 
-  .progress-chip {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 6px 12px 6px 8px;
-    border-radius: 999px;
+  .stats-pills { display: flex; gap: 8px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 6px 12px 6px 8px; border-radius: 999px;
     font-size: 13px; font-weight: 600;
     box-shadow: var(--shadow-sm);
   }
-  .progress-chip .num { color: var(--primary); font-variant-numeric: tabular-nums; }
-  .progress-chip .ring {
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: conic-gradient(var(--primary) 0%, var(--bg-2) 0%);
-    display: grid; place-items: center;
-  }
-  .progress-chip .ring::after {
-    content: ""; width: 14px; height: 14px;
-    background: var(--surface); border-radius: 50%;
-  }
+  .pill .num { font-variant-numeric: tabular-nums; }
+  .pill.visited .num { color: var(--done); }
+  .pill.wished .num { color: var(--wish); }
+  .pill .ico { font-size: 14px; }
 
   main { position: relative; }
-  .view {
-    display: none;
-    animation: fadein .22s ease;
-  }
+  .view { display: none; animation: fadein .22s ease; }
   .view.active { display: block; }
   @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
-  /* page chrome */
   .page-pad { max-width: 1100px; margin: 0 auto; padding: 24px 20px 80px; }
   .hero { margin-bottom: 22px; }
   .hero h1 {
@@ -151,9 +128,7 @@
   .hero p { color: var(--muted); margin: 0; max-width: 60ch; }
 
   .filter-bar {
-    position: sticky;
-    top: var(--topbar-h);
-    z-index: 5;
+    position: sticky; top: var(--topbar-h); z-index: 5;
     margin: 22px 0 18px;
     padding: 12px;
     background: rgba(253,246,236,.92);
@@ -163,8 +138,7 @@
     border-radius: var(--radius);
     display: grid;
     grid-template-columns: 1fr auto auto auto;
-    gap: 10px;
-    align-items: center;
+    gap: 10px; align-items: center;
   }
   input.fld, select.fld, textarea.fld {
     appearance: none; -webkit-appearance: none;
@@ -201,10 +175,8 @@
 
   .filter-bar .reset {
     background: transparent; border: 1px solid var(--border);
-    color: var(--ink-2);
-    border-radius: 10px;
-    padding: 10px 14px;
-    cursor: pointer; font: inherit;
+    color: var(--ink-2); border-radius: 10px;
+    padding: 10px 14px; cursor: pointer; font: inherit;
     transition: background .15s, border-color .15s, color .15s;
   }
   .filter-bar .reset:hover { background: var(--primary-soft); color: var(--primary); border-color: var(--primary-soft); }
@@ -217,8 +189,7 @@
     display: flex; align-items: center; gap: 10px;
     margin: 28px 0 12px;
     font-family: "Fraunces", Georgia, serif;
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 600; font-size: 22px;
     letter-spacing: -0.01em;
   }
   .group-h .pip { width: 10px; height: 10px; border-radius: 50%; }
@@ -233,7 +204,7 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 14px;
   }
   .card {
@@ -247,7 +218,7 @@
     transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 10px;
+    gap: 12px;
     overflow: hidden;
   }
   .card::before {
@@ -255,55 +226,68 @@
     width: 6px; background: var(--district-color, var(--primary));
   }
   .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
-  .card.done { background: var(--done-soft); border-color: #c8e3cd; }
+  .card.wished:not(.done) {
+    background: linear-gradient(135deg, #fff0f5 0%, #ffffff 60%);
+    border-color: #f5cdd9;
+  }
+  .card.done {
+    background: var(--done-soft);
+    border-color: #c8e3cd;
+  }
   .card.done .card-name { color: #2e5e36; }
   .card-name {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ink);
-    margin: 0;
+    font-weight: 600; font-size: 16px;
+    line-height: 1.25; color: var(--ink); margin: 0;
   }
   .card-flavor {
     font-family: "Fraunces", Georgia, serif;
     font-style: italic; font-weight: 500;
-    font-size: 14.5px;
-    color: var(--ink-2);
-    margin: 6px 0 8px;
-    line-height: 1.35;
+    font-size: 14.5px; color: var(--ink-2);
+    margin: 6px 0 8px; line-height: 1.35;
   }
   .card.done .card-flavor { color: #4a6a4f; }
   .card-meta {
-    font-size: 12.5px;
-    color: var(--muted);
+    font-size: 12.5px; color: var(--muted);
     display: flex; align-items: center; gap: 6px;
     flex-wrap: wrap;
   }
-  .check {
-    align-self: start;
-    width: 36px; height: 36px;
+
+  .card-actions {
+    align-self: start; display: flex; flex-direction: column; gap: 6px;
+  }
+  .btn-icon {
+    width: 34px; height: 34px;
     border-radius: 50%;
     border: 1.5px solid var(--border-strong);
     background: var(--surface);
     cursor: pointer;
     display: grid; place-items: center;
     transition: all .15s ease;
+    color: var(--muted);
     flex: 0 0 auto;
   }
-  .check svg { width: 18px; height: 18px; opacity: 0; transform: scale(.6); transition: all .18s ease; color: #fff; }
-  .check:hover { border-color: var(--done); }
-  .card.done .check { background: var(--done); border-color: var(--done); }
-  .card.done .check svg { opacity: 1; transform: scale(1); }
+  .btn-icon svg { width: 18px; height: 18px; transition: all .18s ease; }
+  .btn-icon:hover { border-color: var(--ink-2); color: var(--ink-2); }
+  .btn-icon.heart:hover { border-color: var(--wish); color: var(--wish); }
+  .btn-icon.heart.active {
+    background: var(--wish); border-color: var(--wish); color: #fff;
+  }
+  .btn-icon.heart.active svg { fill: #fff; }
+  .btn-icon.check:hover { border-color: var(--done); color: var(--done); }
+  .btn-icon.check.active {
+    background: var(--done); border-color: var(--done); color: #fff;
+  }
 
   .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
   .empty .big { font-size: 40px; margin-bottom: 8px; }
 
-  /* map view */
+  /* map */
   #view-mapa {
     height: calc(100dvh - var(--topbar-h));
     position: relative;
   }
   #map { width: 100%; height: 100%; }
+
   .map-overlay {
     position: absolute; top: 16px; left: 16px;
     z-index: 500;
@@ -315,6 +299,30 @@
     font-size: 13px; font-weight: 500;
     box-shadow: var(--shadow-md);
   }
+  .map-mode-toggle {
+    position: absolute; top: 16px; right: 16px;
+    z-index: 500;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px;
+    display: none;
+    gap: 2px;
+    box-shadow: var(--shadow-md);
+  }
+  .map-mode-toggle.show { display: flex; }
+  .map-mode-toggle button {
+    border: 0; background: transparent;
+    padding: 7px 14px; border-radius: 999px;
+    font: inherit; font-size: 13px; font-weight: 500;
+    cursor: pointer; color: var(--ink-2);
+    transition: all .15s;
+  }
+  .map-mode-toggle button.active {
+    background: var(--ink); color: #fff;
+  }
+
   .legend {
     position: absolute; right: 16px; bottom: 16px; z-index: 500;
     background: rgba(255,255,255,.95);
@@ -330,7 +338,7 @@
   .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
 
   .leaflet-popup-content-wrapper { border-radius: 14px !important; box-shadow: var(--shadow-lg) !important; }
-  .leaflet-popup-content { font-family: inherit; margin: 14px 16px; min-width: 220px; }
+  .leaflet-popup-content { font-family: inherit; margin: 14px 16px; min-width: 230px; }
   .pop-name { font-weight: 600; font-size: 15px; color: var(--ink); margin-bottom: 4px; }
   .pop-flavor {
     font-family: "Fraunces", Georgia, serif;
@@ -339,17 +347,19 @@
     margin: 6px 0 8px; line-height: 1.35;
   }
   .pop-addr { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
+  .pop-actions { display: flex; gap: 6px; flex-wrap: wrap; }
   .pop-btn {
     display: inline-flex; align-items: center; gap: 6px;
-    background: var(--primary); color: var(--primary-ink);
-    border: 0; padding: 8px 14px; border-radius: 999px;
-    font: inherit; font-weight: 500; font-size: 13px;
-    cursor: pointer; transition: opacity .15s, background .15s;
+    background: var(--surface); color: var(--ink);
+    border: 1.5px solid var(--border-strong); padding: 7px 12px; border-radius: 999px;
+    font: inherit; font-weight: 500; font-size: 12.5px;
+    cursor: pointer; transition: all .15s;
   }
-  .pop-btn:hover { opacity: .92; }
-  .pop-btn.done { background: var(--done); }
+  .pop-btn:hover { border-color: var(--ink-2); }
+  .pop-btn.heart.active { background: var(--wish); color: #fff; border-color: var(--wish); }
+  .pop-btn.check.active { background: var(--done); color: #fff; border-color: var(--done); }
 
-  /* pin */
+  /* pin markers */
   .marker-pin {
     width: 30px; height: 30px;
     border-radius: 50% 50% 50% 0;
@@ -358,7 +368,7 @@
     box-shadow: 0 3px 8px rgba(0,0,0,.25);
     display: grid; place-items: center;
   }
-  .marker-pin > span { transform: rotate(45deg); font-size: 14px; line-height: 1; }
+  .marker-pin > span { transform: rotate(45deg); font-size: 14px; line-height: 1; color: #fff; }
   .marker-num {
     width: 32px; height: 32px;
     border-radius: 50%;
@@ -372,8 +382,7 @@
   .marker-start {
     width: 36px; height: 36px;
     border-radius: 50%;
-    background: var(--ink);
-    color: #fff;
+    background: var(--ink); color: #fff;
     border: 3px solid #fff;
     box-shadow: 0 3px 10px rgba(0,0,0,.3);
     display: grid; place-items: center;
@@ -397,16 +406,13 @@
     letter-spacing: -0.01em;
   }
   .planner-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
+    display: grid; grid-template-columns: 1fr; gap: 12px;
   }
   .planner-grid .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   @media (max-width: 600px) { .planner-grid .row { grid-template-columns: 1fr; } }
   .planner-grid label { font-size: 13px; font-weight: 500; color: var(--ink-2); display: block; margin-bottom: 6px; }
   .planner-grid .row-actions {
-    display: flex; gap: 10px; margin-top: 4px; flex-wrap: wrap;
-    align-items: center;
+    display: flex; gap: 10px; margin-top: 4px; flex-wrap: wrap; align-items: center;
   }
   .checkbox-line { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-2); cursor: pointer; user-select: none; }
   .checkbox-line input { width: 16px; height: 16px; accent-color: var(--primary); }
@@ -425,9 +431,7 @@
   .summary .stat .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 4px; }
   .summary .stat .val {
     font-family: "Fraunces", Georgia, serif;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 1;
+    font-weight: 600; font-size: 26px; line-height: 1;
     color: var(--ink);
   }
   .summary .actions { grid-column: 1 / -1; display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
@@ -440,15 +444,13 @@
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: 36px 1fr auto;
-    gap: 14px;
-    align-items: center;
+    gap: 14px; align-items: center;
     position: relative;
   }
   .stop .num {
     width: 32px; height: 32px;
     border-radius: 50%;
-    background: var(--route);
-    color: #fff;
+    background: var(--route); color: #fff;
     display: grid; place-items: center;
     font-weight: 700; font-size: 14px;
   }
@@ -461,21 +463,22 @@
     font-size: 13.5px; margin-top: 4px;
   }
   .stop .leg {
-    text-align: right;
-    font-size: 12px;
-    color: var(--muted);
+    text-align: right; font-size: 12px; color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
   .stop .leg b { color: var(--ink); display: block; font-size: 14px; font-weight: 600; }
 
   /* mobile */
+  @media (max-width: 760px) {
+    .stats-pills .pill .label-txt { display: none; }
+  }
   @media (max-width: 640px) {
     .topbar { gap: 10px; padding: 0 14px; }
     .brand { font-size: 18px; }
     .brand .yr { display: none; }
     .tabs a { padding: 7px 12px; }
     .tabs a span { display: none; }
-    .progress-chip { padding: 5px 10px 5px 6px; font-size: 12px; }
+    .pill { padding: 5px 10px 5px 6px; font-size: 12px; }
   }
 
   .toast {
@@ -512,9 +515,13 @@
       <span>Rota</span>
     </a>
   </nav>
-  <div class="progress-chip" id="progress-chip" title="Sorveterias visitadas">
-    <span class="ring" id="progress-ring"></span>
-    <span><span class="num" id="progress-num">0</span> / <span id="progress-total">52</span></span>
+  <div class="stats-pills">
+    <div class="pill wished" title="Sorveterias salvas">
+      <span class="ico">♥</span><span><span class="num" id="wish-num">0</span><span class="label-txt"> salvos</span></span>
+    </div>
+    <div class="pill visited" title="Sorveterias visitadas">
+      <span class="ico">✓</span><span><span class="num" id="done-num">0</span> / <span id="done-total">52</span></span>
+    </div>
   </div>
 </header>
 
@@ -523,17 +530,18 @@
     <div class="page-pad">
       <div class="hero">
         <h1>Berlin&rsquo;s gelato week.<br>Uma colher de cada vez.</h1>
-        <p>52 sorveterias, 9 bairros, criações exclusivas. Marque cada uma que você visitar — o progresso fica salvo aqui no navegador.</p>
+        <p>52 sorveterias, 9 bairros. <b>Salve</b> as que você quer ir e <b>marque</b> as que já visitou — depois é só ir pra aba Rota e a gente otimiza o caminho pra você.</p>
       </div>
       <div class="filter-bar">
         <input id="search" class="fld" type="search" placeholder="Buscar por nome, sabor ou rua…" />
         <select id="district-filter" class="fld"><option value="">Todos os bairros</option></select>
         <select id="status-filter" class="fld">
           <option value="all">Todas</option>
+          <option value="wished">♥ Salvos</option>
           <option value="todo">Faltam visitar</option>
           <option value="done">Já visitadas</option>
         </select>
-        <button class="reset" id="reset" title="Limpar marcações">Limpar</button>
+        <button class="reset" id="reset" title="Limpar marcações e salvos">Limpar</button>
       </div>
       <div id="list-content"></div>
     </div>
@@ -541,10 +549,15 @@
 
   <section class="view" id="view-mapa">
     <div id="map"></div>
-    <div class="map-overlay" id="map-stats">52 sorveterias · 0 visitadas</div>
+    <div class="map-overlay" id="map-stats">52 sorveterias</div>
+    <div class="map-mode-toggle" id="map-mode">
+      <button data-mode="route" class="active">Só a rota</button>
+      <button data-mode="all">Rota + todos</button>
+    </div>
     <div class="legend" id="map-legend">
-      <div class="row"><span class="dot" style="background:#ff4d77"></span>Faltam visitar</div>
-      <div class="row"><span class="dot" style="background:#4f9c5e"></span>Visitadas</div>
+      <div class="row"><span class="dot" style="background:#ff8aa8"></span>Faltam</div>
+      <div class="row"><span class="dot" style="background:#d11e68"></span>Salvos ♥</div>
+      <div class="row"><span class="dot" style="background:#4f9c5e"></span>Visitados</div>
     </div>
   </section>
 
@@ -552,7 +565,7 @@
     <div class="page-pad">
       <div class="hero">
         <h1>Planeje sua rota gelato.</h1>
-        <p>Diga onde você está, e a gente monta a melhor ordem para visitar o máximo de sorveterias possível, otimizando a distância caminhando.</p>
+        <p>Diga onde você está e a gente monta a melhor ordem para visitar o máximo de sorveterias possível, otimizando a distância caminhando.</p>
       </div>
 
       <div class="planner-card">
@@ -561,6 +574,14 @@
           <div>
             <label for="start-addr">Endereço de partida</label>
             <input id="start-addr" class="fld" type="text" placeholder="Ex.: Alexanderplatz, Berlin" autocomplete="off" />
+          </div>
+          <div>
+            <label for="include-mode">Quais sorveterias incluir?</label>
+            <select id="include-mode" class="fld">
+              <option value="wished">♥ Só os meus salvos</option>
+              <option value="todo" selected>Todas que ainda quero conhecer (não-visitadas)</option>
+              <option value="all">Todas as 52</option>
+            </select>
           </div>
           <div class="row">
             <div>
@@ -574,13 +595,10 @@
           </div>
           <div class="row">
             <label class="checkbox-line">
-              <input type="checkbox" id="only-todo" checked />
-              Considerar só sorveterias que ainda não visitei
-            </label>
-            <label class="checkbox-line">
               <input type="checkbox" id="filter-district" />
               Restringir a um bairro específico
             </label>
+            <div></div>
           </div>
           <div id="district-restrict-row" style="display:none;">
             <label for="district-restrict">Bairro</label>
@@ -607,9 +625,12 @@
 <script>
 const PLACES_DATA = [{"id": 1, "name": "Baci Italiani", "district": "Charlottenburg", "address": "Theodor-Heuss-Platz 2, Berlin", "flavor": "Dolce Bacio: tahini ice cream swirled with salted caramel and lotus", "lat": 52.5099931, "lon": 13.2735201, "geocode_display": "Eiscafé Mauritius, 2, Theodor-Heuss-Platz, Villenkolonie Westend, Westend, Charlottenburg-Wilmersdorf, Berlin, 14052, Deutschland"}, {"id": 2, "name": "Café Roberta", "district": "Charlottenburg", "address": "Damaschkestr. 4, Berlin", "flavor": "Persischer Sommer: cucumber sorbet with a sweet mint vinegar", "lat": 52.4996966, "lon": 13.3025556, "geocode_display": "4, Damaschkestraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10711, Deutschland"}, {"id": 3, "name": "Gimme Gelato Charlottenburg", "district": "Charlottenburg", "address": "Wundtstr. 15, Berlin", "flavor": "Matcha latte", "lat": 52.5120391, "lon": 13.2940787, "geocode_display": "15, Wundtstraße, Gierkekiez, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Deutschland"}, {"id": 4, "name": "Klassen's Eis", "district": "Charlottenburg", "address": "Leibnizstr. 48, Berlin", "flavor": "Olive oil and pine nut", "lat": 52.5017546, "lon": 13.3129938, "geocode_display": "The Market, 48, Leibnizstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10629, Deutschland"}, {"id": 5, "name": "Bio-Eiscafé Caramello", "district": "Friedrichshain & Lichtenberg", "address": "Wühlischstr. 31, Berlin", "flavor": "Zen Tropics: creamy vegan matcha refined with coconut", "lat": 52.5099329, "lon": 13.4573981, "geocode_display": "31, Wühlischstraße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"}, {"id": 6, "name": "Chipi Chipi Bombón", "district": "Friedrichshain & Lichtenberg", "address": "Warschauer Str. 12, Berlin", "flavor": "Zabaione (alcoholic)", "lat": 52.5131962, "lon": 13.4525181, "geocode_display": "Chipi Chipi Bombón, 12, Warschauer Straße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland"}, {"id": 7, "name": "Green Scoop", "district": "Friedrichshain & Lichtenberg", "address": "Boxhagener Str. 71, Berlin", "flavor": "Lukuma: dulce de leche", "lat": 52.5067382, "lon": 13.4693774, "geocode_display": "71, Boxhagener Straße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"}, {"id": 8, "name": "Jäätelö DieEisdiele", "district": "Friedrichshain & Lichtenberg", "address": "Zwieseler Str. 44, Berlin", "flavor": "Vanilla and rhubarb crumble", "lat": 52.4879695, "lon": 13.539313, "geocode_display": "44, Zwieseler Straße, Gartenstadt Karlshorst, Rheinisches Viertel, Karlshorst, Lichtenberg, Berlin, 10318, Deutschland"}, {"id": 9, "name": "Milchstraße Gelateria Italiana", "district": "Friedrichshain & Lichtenberg", "address": "Möllendorffstr. 45, Berlin", "flavor": "Honeymoon: honey swirl with lemon-chocolate-crumble", "lat": 52.5238219, "lon": 13.4800578, "geocode_display": "Nierenzentrum Lichtenberg, 45, Möllendorffstraße, Fennpfuhl, Lichtenberg, Berlin, 10367, Deutschland"}, {"id": 10, "name": "NaturEis", "district": "Friedrichshain & Lichtenberg", "address": "Gärtnerstr. 2, Berlin", "flavor": "Yogurt, apricot, almond and roasted cocoa beans", "lat": 52.5083193, "lon": 13.4603087, "geocode_display": "2, Gärtnerstraße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"}, {"id": 11, "name": "Peggy Bee", "district": "Friedrichshain & Lichtenberg", "address": "Weichselstr. 13, Berlin", "flavor": "Spicy-Bitter Gianduia: hazelnut chocolate and Calabrian chili pepper", "lat": 52.5114432, "lon": 13.4688886, "geocode_display": "13, Weichselstraße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland"}, {"id": 12, "name": "SchneeEISchen", "district": "Friedrichshain & Lichtenberg", "address": "Scharnweberstr. 20, Berlin", "flavor": "Sweet, Salty & Baked: raspberry swirl in salted caramel with homemade buttery crumble", "lat": 52.5128033, "lon": 13.4673849, "geocode_display": "20, Scharnweberstraße, Friedrichshain, Berlin"}, {"id": 13, "name": "Spoonful Berlin (Friedrichshain)", "district": "Friedrichshain & Lichtenberg", "address": "Gärtnerstraße 33, Berlin", "flavor": "Vanilla with aged balsamic & roasted hazelnuts", "lat": 52.5084681, "lon": 13.4595634, "geocode_display": "33, Gärtnerstraße, Friedrichshain, Berlin"}, {"id": 14, "name": "Berlin Homemade Icecream (Elßholzstr.)", "district": "Schöneberg", "address": "Elßholzstr. 10, Berlin", "flavor": "Greek yogurt with matcha", "lat": 52.4926651, "lon": 13.3563712, "geocode_display": "Berlin Homemade Icecream, 10, Elßholzstraße, Winterfeldtkiez, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10781, Deutschland"}, {"id": 15, "name": "Berlin Homemade Icecream (Lauterstr.)", "district": "Schöneberg", "address": "Lauterstr. 17, Berlin", "flavor": "White chocolate with berries", "lat": 52.4716365, "lon": 13.3350372, "geocode_display": "Netto Marken-Discount, 17, Lauterstraße, Wagnerviertel, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland"}, {"id": 16, "name": "Gimme Gelato BRLO", "district": "Schöneberg", "address": "Schöneberger Str. 16, Berlin", "flavor": "Chai latte", "lat": 52.5000124, "lon": 13.3733584, "geocode_display": "Brło-Biergarten, 16, Schöneberger Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland"}, {"id": 17, "name": "Gimme Gelato Jules B-Part", "district": "Schöneberg", "address": "Luckenwalder Str. 6B, Berlin", "flavor": "Coffee pecan crunch", "lat": 52.499062, "lon": 13.3733828, "geocode_display": "B-Part, 6b, Luckenwalder Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland"}, {"id": 18, "name": "KiezEis", "district": "Schöneberg", "address": "Winterfeldtstr. 46, Berlin", "flavor": "Almond sorbet with cherry swirls", "lat": 52.4970971, "lon": 13.353303, "geocode_display": "Moranga, 46, Winterfeldtstraße, Winterfeldtkiez, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10781, Deutschland"}, {"id": 19, "name": "Alphi's Eis", "district": "Prenzlauer Berg & Pankow", "address": "Heynstr. 33, Berlin", "flavor": "Watermelon Twist: watermelon, feta, mint, and tajin", "lat": 52.5653026, "lon": 13.40279, "geocode_display": "33, Heynstraße, Florakiez, Pankow, Berlin, 13187, Deutschland"}, {"id": 20, "name": "B-Iced", "district": "Prenzlauer Berg & Pankow", "address": "Rennbahnstr. 21, Berlin", "flavor": "Choco Orange Crunch: vegan chocolate with orange, basil, rosemary", "lat": 52.5602357, "lon": 13.4593536, "geocode_display": "B'ICED, 21, Rennbahnstraße, Munizipalviertel, Weißensee, Pankow, Berlin, 13086, Deutschland"}, {"id": 21, "name": "Ben, Emi & Friends", "district": "Prenzlauer Berg & Pankow", "address": "Gleimstr. 54, Berlin", "flavor": "Beurre Noisette Soft Eis: caramelized butter sundae", "lat": 52.5469486, "lon": 13.4036259, "geocode_display": "Holy Everest, 54, Gleimstraße, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10437, Deutschland"}, {"id": 22, "name": "Berliner Eisbär", "district": "Prenzlauer Berg & Pankow", "address": "Naugarder Str. 16, Berlin", "flavor": "Berlin Vanilla: vanilla paste, butter cookies and black currant", "lat": 52.5450305, "lon": 13.437556, "geocode_display": "16, Naugarder Straße, Wohnstadt Carl Legien, Mühlenviertel, Prenzlauer Berg, Pankow, Berlin, 10409, Deutschland"}, {"id": 23, "name": "Eiscafé Il Buon Gelato", "district": "Prenzlauer Berg & Pankow", "address": "Achillesstr. 46, Berlin", "flavor": "Määh statt Muuh!: goat milk harmony with mint, pear, and oat", "lat": 52.6183215, "lon": 13.4863499, "geocode_display": "46, Achillesstraße, Stadtrandsiedlung Buch, Karow-Nord, Karow, Pankow, Berlin, 13125, Deutschland"}, {"id": 24, "name": "Eisspatz", "district": "Prenzlauer Berg & Pankow", "address": "Schönstr. 1, Berlin", "flavor": "Yogurt sorrel & nettle ice cream — Vegan: purple carrots with coconut and cinnamon", "lat": 52.5529655, "lon": 13.4495406, "geocode_display": "Eisspatz, 1, Schönstraße, Munizipalviertel, Weißensee, Pankow, Berlin, 13086, Deutschland"}, {"id": 25, "name": "Giomecca", "district": "Prenzlauer Berg & Pankow", "address": "Erich-Weinert-Str. 3, Berlin", "flavor": "Croccante: fior di latte with candied cherries, milk chocolate", "lat": 52.5521181, "lon": 13.4149103, "geocode_display": "Giomecca, 3, Erich-Weinert-Straße, Humann-Kiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland"}, {"id": 26, "name": "Il Gelataio", "district": "Prenzlauer Berg & Pankow", "address": "Am Friedrichshain 6, Berlin", "flavor": "Raspberry with balsamic vinegar", "lat": 52.5294256, "lon": 13.4345576, "geocode_display": "6, Am Friedrichshain, Bötzowkiez, Prenzlauer Berg, Pankow, Berlin, 10407, Deutschland"}, {"id": 27, "name": "Süßfein (Rykestr.)", "district": "Prenzlauer Berg & Pankow", "address": "Rykestr. 50, Berlin", "flavor": "Vanilla, miso caramel, and sesame", "lat": 52.5355454, "lon": 13.4195071, "geocode_display": "Park-Klinik & Lipoklinik Berlin, 50, Rykestraße, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland"}, {"id": 28, "name": "Artigiani", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Unter den Eichen 94B, Berlin", "flavor": "Mediterraneo 2.0: olive oil gelato infused with rosemary", "lat": 52.4449734, "lon": 13.2928096, "geocode_display": "94b, Unter den Eichen, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12205, Deutschland"}, {"id": 29, "name": "Artigiani am Schlachtensee", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Matterhornstr. 52, Berlin", "flavor": "Tokyo Love: milk-based gelato with matcha tea and wasabi", "lat": 52.4388412, "lon": 13.2168678, "geocode_display": "Viet Hello BBQ, 52, Matterhornstraße, Siedlung Schlachtensee II, Schlachtensee, Steglitz-Zehlendorf, Berlin, 14129, Deutschland"}, {"id": 30, "name": "Berliner Genussmanufaktur", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Curtiusstr. 8, Berlin", "flavor": "Lemon Cheesecake: cookie dough with lemon curd", "lat": 52.4426673, "lon": 13.2950338, "geocode_display": "8, Curtiusstraße, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12205, Deutschland"}, {"id": 31, "name": "Bonoca Manufaktur", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Osdorfer Str. 93D, Berlin", "flavor": "Blondie Brownie: light chocolate gelato blended with Chocogold", "lat": 52.4126716, "lon": 13.3204568, "geocode_display": "93D, Osdorfer Straße, Lilienthal Siedlung, Lichterfelde Süd, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12207, Deutschland"}, {"id": 32, "name": "Eis Da Gianni (Lankwitz)", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Lankwitzer Str. 15, Berlin", "flavor": "Homemade cashew butter, white chocolate and cranberry", "lat": 52.4368894, "lon": 13.3753225, "geocode_display": "15, Lankwitzer Straße, Mariendorf, Tempelhof-Schöneberg, Berlin, 12107, Deutschland"}, {"id": 33, "name": "La Pallina", "district": "Lichterfelde, Steglitz & Zehlendorf", "address": "Hortensienstr. 12B, Berlin", "flavor": "Ofenschlupfer: vanilla-infused milk base with stale bread", "lat": 52.4483147, "lon": 13.3056875, "geocode_display": "12B, Hortensienstraße, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12203, Deutschland"}, {"id": 34, "name": "Eiscafé Bürgerle", "district": "Erkner", "address": "Friedrichstr. 22B, Erkner", "flavor": "Coconut with ananas and passion fruit", "lat": 52.4216509, "lon": 13.7530931, "geocode_display": "Eiscafé Bürgerle, 22B, Friedrichstraße, Zentrum, Erkner, Oder-Spree, Brandenburg, 15537, Deutschland"}, {"id": 35, "name": "Caffè e Gelato", "district": "Mitte", "address": "Alte Potsdamer Str. 7, Berlin", "flavor": "Yogurt Dream: Greek yogurt with pistachio crunch", "lat": 52.5074122, "lon": 13.3741147, "geocode_display": "The Playce, 7, Alte Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Deutschland"}, {"id": 36, "name": "Cuore di Vetro", "district": "Mitte", "address": "Max-Beer-Str. 33, Berlin", "flavor": "Fall: salty caramel with crunchy nougat", "lat": 52.5265876, "lon": 13.4085992, "geocode_display": "Cuore Di Vetro, 33, Max-Beer-Straße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Deutschland"}, {"id": 37, "name": "Eis Da Gianni (Turmstr.)", "district": "Mitte", "address": "Turmstr. 35A, Berlin", "flavor": "Champagne Grand Cru Rosé", "lat": 52.5267149, "lon": 13.3373952, "geocode_display": "35a, Turmstraße, Alt-Moabit, Arminiuskiez, Moabit, Mitte, Berlin, 10551, Deutschland"}, {"id": 38, "name": "La Dolceria aROMA (Friedrichstr. 110)", "district": "Mitte", "address": "Friedrichstr. 110, Berlin", "flavor": "Tangerine kiss", "lat": 52.5249468, "lon": 13.3877588, "geocode_display": "110, Friedrichstraße, Dorotheenstadt, Mitte, Berlin, 10117, Deutschland"}, {"id": 39, "name": "La Dolceria aROMA (Friedrichstr. 81)", "district": "Mitte", "address": "Friedrichstr. 81, Berlin", "flavor": "Lavender with lemon", "lat": 52.5153826, "lon": 13.3892968, "geocode_display": "81, Friedrichstraße, Mitte, Berlin"}, {"id": 40, "name": "My Daddy's Gelateria", "district": "Mitte", "address": "Grüntaler Str. 13, Berlin", "flavor": "Mascarpone Mood: mascarpone, cream and fig swirls", "lat": 52.5524095, "lon": 13.3873083, "geocode_display": "13, Grüntaler Straße, Gartenstadt Atlantic, Soldiner Kiez, Gesundbrunnen, Mitte, Berlin, 13357, Deutschland"}, {"id": 41, "name": "Süßfein (Brunnenstr.)", "district": "Mitte", "address": "Brunnenstr. 156, Berlin", "flavor": "Vanilla, miso caramel, and sesame", "lat": 52.5354851, "lon": 13.3974626, "geocode_display": "156, Brunnenstraße, Arkonakiez, Mitte, Berlin, 10115, Deutschland"}, {"id": 42, "name": "DaValentino", "district": "Neukölln", "address": "Alt-Rudow 63, Berlin", "flavor": "Salty Ruby-Dream: pomegranate yogurt with salted pistachio", "lat": 52.4172696, "lon": 13.4966938, "geocode_display": "63, Alt-Rudow, Blumenviertel, Rudow, Neukölln, Berlin, 12355, Deutschland"}, {"id": 43, "name": "Lumi Gelato e Caffè", "district": "Neukölln", "address": "Karl-Marx-Str. 57, Berlin", "flavor": "Indian Summer: mango, lime, salt and chili", "lat": 52.4829779, "lon": 13.432156, "geocode_display": "Tonerdumping, 57, Karl-Marx-Straße, Donaukiez, Neukölln, Berlin, 12043, Deutschland"}, {"id": 44, "name": "Spoonful Berlin (Neukölln)", "district": "Neukölln", "address": "Weserstr. 6, Berlin", "flavor": "White chocolate crunch and lemon ripple", "lat": 52.4882098, "lon": 13.4274772, "geocode_display": "Eismanufaktur Spoonful, 6, Weserstraße, Reuterkiez, Neukölln, Berlin, 12047, Deutschland"}, {"id": 45, "name": "Summertime", "district": "Neukölln", "address": "Weserstr. 45, Berlin", "flavor": "Peach iced tea: white peach sorbet with Earl Grey", "lat": 52.4845092, "lon": 13.4382938, "geocode_display": "45, Weserstraße, Donaukiez, Neukölln, Berlin, 12045, Deutschland"}, {"id": 46, "name": "Die Eismacher", "district": "Kreuzberg", "address": "Körtestr. 10, Berlin", "flavor": "Chamango — mango with chamoy: mango lime sorbet", "lat": 52.4912888, "lon": 13.4110988, "geocode_display": "Swingspiration, 10, Körtestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"}, {"id": 47, "name": "Gelato Disco", "district": "Kreuzberg", "address": "Schleiermacherstr. 9, Berlin", "flavor": "Yuzu Disco: Japanese citrus sorbet with walnut crunch", "lat": 52.4926791, "lon": 13.3982593, "geocode_display": "9, Schleiermacherstraße, Chamissokiez, Bergmannkiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland"}, {"id": 48, "name": "Gelato Rallo (Bergmannstr.)", "district": "Kreuzberg", "address": "Bergmannstr. 5, Berlin", "flavor": "Blossom magic: strawberry, elderflower and mint", "lat": 52.4893528, "lon": 13.388948, "geocode_display": "5, Bergmannstraße, Kreuzberg, Berlin"}, {"id": 49, "name": "Gelato Rallo (Kottbusser Damm)", "district": "Kreuzberg", "address": "Kottbusser Damm 1, Berlin", "flavor": "Strawberry-Matcha sorbet", "lat": 52.4954179, "lon": 13.4202243, "geocode_display": "Cicala Caffetteria Italiana, 1, Kottbusser Damm, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"}, {"id": 50, "name": "Sen&Ben Eiscafé", "district": "Kreuzberg", "address": "Adalbertstr. 8, Berlin", "flavor": "Ayran-Mango", "lat": 52.5003371, "lon": 13.4195534, "geocode_display": "Clue, 8, Adalbertstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland"}, {"id": 51, "name": "Spoonful Berlin (Kreuzberg)", "district": "Kreuzberg", "address": "Graefestr. 7, Berlin", "flavor": "Dark chocolate and beet with wafer crunch", "lat": 52.494657, "lon": 13.4183265, "geocode_display": "7, Graefestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"}, {"id": 52, "name": "Zàgara", "district": "Kreuzberg", "address": "Köpenicker Str. 4, Berlin", "flavor": "Persia on my mind: apricot, pomegranate and cardamom", "lat": 52.5018969, "lon": 13.4407344, "geocode_display": "Zàgara, 4, Köpenicker Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Deutschland"}];
 
-const STORAGE_KEY = "gelato-week-2026-visited";
+const VISIT_KEY = "gelato-week-2026-visited";
+const WISH_KEY  = "gelato-week-2026-wishlist";
 const ROUTE_KEY = "gelato-week-2026-route";
-const visited = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"));
+
+const visited  = new Set(JSON.parse(localStorage.getItem(VISIT_KEY) || "[]"));
+const wished   = new Set(JSON.parse(localStorage.getItem(WISH_KEY)  || "[]"));
 
 const DISTRICT_COLORS = {
   "Charlottenburg":                       "#e88aa3",
@@ -629,26 +650,34 @@ const places = PLACES_DATA.slice().sort((a,b) =>
 );
 
 let map, markers = new Map(), mapInitialized = false;
-let routeLayer = null, routeMarkers = [], currentRoute = null;
+let routeLayer = null, routeMarkers = [], startMarker = null;
+let currentRoute = null;
+let mapMode = "route"; // "route" | "all"
 
-function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify([...visited])); }
+function saveVisited() { localStorage.setItem(VISIT_KEY, JSON.stringify([...visited])); }
+function saveWished()  { localStorage.setItem(WISH_KEY,  JSON.stringify([...wished])); }
 function saveRoute() {
   if (currentRoute) localStorage.setItem(ROUTE_KEY, JSON.stringify(currentRoute));
   else localStorage.removeItem(ROUTE_KEY);
 }
 function loadRoute() {
-  try { currentRoute = JSON.parse(localStorage.getItem(ROUTE_KEY) || "null"); } catch { currentRoute = null; }
+  try { currentRoute = JSON.parse(localStorage.getItem(ROUTE_KEY) || "null"); }
+  catch { currentRoute = null; }
 }
 
 function escapeHTML(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 }
 
-function pinIcon(done) {
-  const color = done ? "#4f9c5e" : "#ff4d77";
+function pinIcon(p) {
+  // priority: visited > wished > default
+  const v = visited.has(p.id), w = wished.has(p.id);
+  let color = "#ff8aa8", glyph = "🍦";
+  if (v)      { color = "#4f9c5e"; glyph = "✓"; }
+  else if (w) { color = "#d11e68"; glyph = "♥"; }
   return L.divIcon({
     className: "",
-    html: `<div class="marker-pin" style="background:${color}"><span>🍦</span></div>`,
+    html: `<div class="marker-pin" style="background:${color}"><span>${glyph}</span></div>`,
     iconSize: [30, 30], iconAnchor: [15, 30], popupAnchor: [0, -26],
   });
 }
@@ -667,45 +696,54 @@ function startIcon() {
   });
 }
 
-function popupHTML(p) {
-  const done = visited.has(p.id);
+function popupHTML(p, opts = {}) {
+  const v = visited.has(p.id), w = wished.has(p.id);
+  const numHTML = opts.num ? `#${opts.num} · ` : "";
   return `
-    <div class="pop-name">${escapeHTML(p.name)}</div>
+    <div class="pop-name">${numHTML}${escapeHTML(p.name)}</div>
     <div class="pop-flavor">${escapeHTML(p.flavor)}</div>
     <div class="pop-addr">📍 ${escapeHTML(p.address)} · ${escapeHTML(p.district)}</div>
-    <button class="pop-btn ${done ? "done" : ""}" data-id="${p.id}">
-      ${done ? "✓ Visitada — desmarcar" : "Marcar como visitada"}
-    </button>`;
+    <div class="pop-actions">
+      <button class="pop-btn heart ${w ? "active" : ""}" data-act="wish" data-id="${p.id}">${w ? "♥ Salvo" : "♡ Salvar"}</button>
+      <button class="pop-btn check ${v ? "active" : ""}" data-act="visit" data-id="${p.id}">${v ? "✓ Visitada" : "Visitei"}</button>
+    </div>`;
 }
 
-function toggle(id) {
-  if (visited.has(id)) visited.delete(id);
-  else visited.add(id);
-  save();
-  renderList();
-  updateProgress();
+function refreshMarker(id) {
   const m = markers.get(id);
-  if (m) {
-    m.setIcon(pinIcon(visited.has(id)));
-    const p = places.find(x => x.id === id);
-    m.setPopupContent(popupHTML(p));
-  }
+  if (!m) return;
+  const p = places.find(x => x.id === id);
+  m.setIcon(pinIcon(p));
+  m.setPopupContent(popupHTML(p));
 }
 
-function updateProgress() {
+function toggleVisit(id) {
+  if (visited.has(id)) visited.delete(id); else visited.add(id);
+  saveVisited();
+  refreshMarker(id); renderList(); updateStats();
+}
+function toggleWish(id) {
+  if (wished.has(id)) wished.delete(id); else wished.add(id);
+  saveWished();
+  refreshMarker(id); renderList(); updateStats();
+}
+
+function updateStats() {
   const total = places.length;
   const done = places.filter(p => visited.has(p.id)).length;
-  const pct = total ? Math.round(done/total*100) : 0;
-  document.getElementById("progress-num").textContent = done;
-  document.getElementById("progress-total").textContent = total;
-  document.getElementById("progress-ring").style.background =
-    `conic-gradient(var(--primary) ${pct}%, var(--bg-2) ${pct}%)`;
+  const w = wished.size;
+  document.getElementById("done-num").textContent = done;
+  document.getElementById("done-total").textContent = total;
+  document.getElementById("wish-num").textContent = w;
   const ms = document.getElementById("map-stats");
   if (ms) {
     if (currentRoute) {
       ms.textContent = `Rota: ${currentRoute.stops.length} parada${currentRoute.stops.length===1?"":"s"} · ${currentRoute.totalKm.toFixed(1)} km`;
     } else {
-      ms.textContent = `${total} sorveterias · ${done} visitada${done===1?"":"s"}`;
+      const parts = [`${total} sorveterias`];
+      if (w) parts.push(`${w} salvos`);
+      if (done) parts.push(`${done} visitados`);
+      ms.textContent = parts.join(" · ");
     }
   }
 }
@@ -718,8 +756,9 @@ function renderList() {
 
   const filtered = places.filter(p => {
     if (dist && p.district !== dist) return false;
-    if (status === "done" && !visited.has(p.id)) return false;
-    if (status === "todo" && visited.has(p.id)) return false;
+    if (status === "done"   && !visited.has(p.id)) return false;
+    if (status === "todo"   && visited.has(p.id))  return false;
+    if (status === "wished" && !wished.has(p.id))  return false;
     if (q) {
       const hay = `${p.name} ${p.address} ${p.flavor} ${p.district}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -729,7 +768,6 @@ function renderList() {
 
   if (!filtered.length) {
     root.innerHTML = `<div class="empty"><div class="big">🔍</div><div>Nada por aqui. Tenta limpar os filtros.</div></div>`;
-    syncMarkersVisibility(filtered);
     return;
   }
 
@@ -750,10 +788,11 @@ function renderList() {
       </h2>
       <div class="cards">
         ${items.map(p => {
-          const done = visited.has(p.id);
+          const v = visited.has(p.id), w = wished.has(p.id);
+          const klass = (v ? " done" : "") + (w ? " wished" : "");
           const shortAddr = p.address.replace(", Berlin","").replace(", Erkner","");
           return `
-            <article class="card ${done ? "done":""}" data-id="${p.id}" style="--district-color:${col}">
+            <article class="card${klass}" data-id="${p.id}" style="--district-color:${col}">
               <div>
                 <h3 class="card-name">${escapeHTML(p.name)}</h3>
                 <p class="card-flavor">${escapeHTML(p.flavor)}</p>
@@ -761,9 +800,14 @@ function renderList() {
                   <span>📍</span><span>${escapeHTML(shortAddr)}</span>
                 </div>
               </div>
-              <button class="check" aria-label="${done?"Desmarcar visita":"Marcar como visitada"}">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-              </button>
+              <div class="card-actions">
+                <button class="btn-icon heart ${w ? "active" : ""}" data-act="wish" aria-label="${w?"Tirar dos salvos":"Salvar"}" title="${w?"Tirar dos salvos":"Salvar para visitar"}">
+                  <svg viewBox="0 0 24 24" fill="${w ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </button>
+                <button class="btn-icon check ${v ? "active" : ""}" data-act="visit" aria-label="${v?"Desmarcar visita":"Marcar como visitada"}" title="${v?"Desmarcar visita":"Já visitei"}">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </button>
+              </div>
             </article>`;
         }).join("")}
       </div>`;
@@ -772,34 +816,31 @@ function renderList() {
 
   root.querySelectorAll(".card").forEach(el => {
     const id = parseInt(el.getAttribute("data-id"), 10);
-    el.querySelector(".check").addEventListener("click", e => { e.stopPropagation(); toggle(id); });
+    el.querySelectorAll("button[data-act]").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.stopPropagation();
+        const act = btn.getAttribute("data-act");
+        if (act === "wish") toggleWish(id);
+        else if (act === "visit") toggleVisit(id);
+      });
+    });
     el.addEventListener("click", () => {
       location.hash = "#/mapa";
       setTimeout(() => {
         const p = places.find(x => x.id === id);
         const m = markers.get(id);
         if (m && p.lat && p.lon && map) {
+          // ensure default markers shown
+          if (currentRoute && mapMode === "route") setMapMode("all");
           map.flyTo([p.lat, p.lon], Math.max(map.getZoom(), 15), { duration: 0.6 });
           m.openPopup();
         }
       }, 80);
     });
   });
-  syncMarkersVisibility(filtered);
 }
 
-function syncMarkersVisibility(filtered) {
-  if (!map) return;
-  // Don't mess with markers when a route is active — they're shown as numbered stops
-  if (currentRoute) return;
-  const set = new Set(filtered.map(p => p.id));
-  for (const p of places) {
-    const m = markers.get(p.id);
-    if (!m) continue;
-    if (set.has(p.id) && !map.hasLayer(m)) m.addTo(map);
-    else if (!set.has(p.id) && map.hasLayer(m)) map.removeLayer(m);
-  }
-}
+/* ---------- Map ---------- */
 
 function initMap() {
   if (mapInitialized) {
@@ -816,22 +857,106 @@ function initMap() {
   const bounds = [];
   for (const p of places) {
     if (!p.lat || !p.lon) continue;
-    const m = L.marker([p.lat, p.lon], { icon: pinIcon(visited.has(p.id)) }).bindPopup(popupHTML(p));
-    m.on("popupopen", e => {
-      const btn = e.popup.getElement().querySelector("button[data-id]");
-      if (btn) btn.addEventListener("click", () => toggle(p.id));
-    });
-    m.addTo(map);
+    const m = L.marker([p.lat, p.lon], { icon: pinIcon(p) }).bindPopup(popupHTML(p));
+    m.on("popupopen", e => attachPopupActions(e.popup, p.id));
     markers.set(p.id, m);
     bounds.push([p.lat, p.lon]);
   }
   if (bounds.length) map.fitBounds(bounds, { padding: [40, 40] });
+  applyMapView();
   setTimeout(() => map.invalidateSize(), 60);
-
-  if (currentRoute) drawRouteOnMap();
 }
 
-/* ---------- Routing ---------- */
+function attachPopupActions(popup, id) {
+  const root = popup.getElement();
+  root.querySelectorAll("button[data-act]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const act = btn.getAttribute("data-act");
+      if (act === "wish") toggleWish(id);
+      else if (act === "visit") toggleVisit(id);
+    });
+  });
+}
+
+function setMapMode(mode) {
+  mapMode = mode;
+  document.querySelectorAll(".map-mode-toggle button").forEach(b => {
+    b.classList.toggle("active", b.dataset.mode === mode);
+  });
+  applyMapView();
+}
+
+function applyMapView() {
+  if (!map) return;
+
+  // tear down route layers
+  if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+  routeMarkers.forEach(m => map.removeLayer(m));
+  routeMarkers = [];
+  if (startMarker) { map.removeLayer(startMarker); startMarker = null; }
+
+  const toggle = document.getElementById("map-mode");
+  if (currentRoute) {
+    toggle.classList.add("show");
+    document.querySelectorAll(".map-mode-toggle button").forEach(b => {
+      b.classList.toggle("active", b.dataset.mode === mapMode);
+    });
+  } else {
+    toggle.classList.remove("show");
+  }
+
+  // base markers (all 52)
+  const showAll = !currentRoute || mapMode === "all";
+  for (const [id, m] of markers) {
+    if (showAll) {
+      if (!map.hasLayer(m)) m.addTo(map);
+    } else {
+      if (map.hasLayer(m)) map.removeLayer(m);
+    }
+  }
+
+  // route layers
+  if (currentRoute) {
+    const points = [
+      [currentRoute.start.lat, currentRoute.start.lon],
+      ...currentRoute.stops.map(s => [s.lat, s.lon]),
+    ];
+    routeLayer = L.polyline(points, {
+      color: "#6a5acd", weight: 4, opacity: 0.85, dashArray: "6,8",
+    }).addTo(map);
+
+    startMarker = L.marker(points[0], { icon: startIcon() })
+      .bindPopup(`<div class="pop-name">📍 Partida</div><div class="pop-addr">${escapeHTML(currentRoute.start.display || "Sua localização")}</div>`)
+      .addTo(map);
+
+    currentRoute.stops.forEach((s, i) => {
+      const m = L.marker([s.lat, s.lon], { icon: numIcon(i+1) }).bindPopup(popupHTML(s, { num: i+1 }))
+        .on("popupopen", e => attachPopupActions(e.popup, s.id));
+      m.addTo(map);
+      routeMarkers.push(m);
+    });
+
+    // legend with route bits
+    document.getElementById("map-legend").innerHTML = `
+      <div class="row"><span class="dot" style="background:var(--ink)"></span>Partida</div>
+      <div class="row"><span class="dot" style="background:#6a5acd"></span>Paradas (na ordem)</div>
+      ${mapMode === "all" ? `
+        <div class="row"><span class="dot" style="background:#ff8aa8"></span>Outras</div>
+        <div class="row"><span class="dot" style="background:#d11e68"></span>Salvos ♥</div>
+        <div class="row"><span class="dot" style="background:#4f9c5e"></span>Visitados</div>` : ""}`;
+
+    if (mapMode === "route") {
+      map.fitBounds(L.latLngBounds(points), { padding: [50, 50] });
+    }
+  } else {
+    document.getElementById("map-legend").innerHTML = `
+      <div class="row"><span class="dot" style="background:#ff8aa8"></span>Faltam</div>
+      <div class="row"><span class="dot" style="background:#d11e68"></span>Salvos ♥</div>
+      <div class="row"><span class="dot" style="background:#4f9c5e"></span>Visitados</div>`;
+  }
+}
+
+/* ---------- Routing algorithm ---------- */
 
 function haversineKm(a, b) {
   const R = 6371;
@@ -855,7 +980,6 @@ async function geocodeAddress(text) {
   return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon), display: data[0].display_name };
 }
 
-// nearest-neighbor + 2-opt, with budget (max stops + max km)
 function planRoute(start, candidates, opts) {
   const maxStops = Math.max(1, opts.maxStops || candidates.length);
   const maxKm = opts.maxKm > 0 ? opts.maxKm : Infinity;
@@ -877,7 +1001,7 @@ function planRoute(start, candidates, opts) {
     tour.push(remaining.splice(bestI, 1)[0]);
   }
 
-  // 2-opt improvement (skip the start position)
+  // 2-opt
   let improved = true, iter = 0;
   while (improved && iter < 30) {
     improved = false; iter++;
@@ -894,7 +1018,6 @@ function planRoute(start, candidates, opts) {
     }
   }
 
-  // recompute legs after 2-opt
   totalKm = 0;
   const stops = [];
   for (let i = 1; i < tour.length; i++) {
@@ -902,71 +1025,7 @@ function planRoute(start, candidates, opts) {
     totalKm += leg;
     stops.push({ ...tour[i], legKm: leg });
   }
-
   return { start, stops, totalKm };
-}
-
-function drawRouteOnMap() {
-  if (!map) return;
-  if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
-  routeMarkers.forEach(m => map.removeLayer(m));
-  routeMarkers = [];
-
-  if (!currentRoute) {
-    document.getElementById("map-legend").innerHTML = `
-      <div class="row"><span class="dot" style="background:#ff4d77"></span>Faltam visitar</div>
-      <div class="row"><span class="dot" style="background:#4f9c5e"></span>Visitadas</div>`;
-    // restore default markers
-    for (const p of places) {
-      const m = markers.get(p.id);
-      if (m && !map.hasLayer(m)) m.addTo(map);
-    }
-    return;
-  }
-
-  // hide default markers when in route mode
-  for (const m of markers.values()) {
-    if (map.hasLayer(m)) map.removeLayer(m);
-  }
-
-  const points = [[currentRoute.start.lat, currentRoute.start.lon],
-    ...currentRoute.stops.map(s => [s.lat, s.lon])];
-  routeLayer = L.polyline(points, {
-    color: "#6a5acd",
-    weight: 4,
-    opacity: 0.85,
-    dashArray: "6,8",
-  }).addTo(map);
-
-  // start marker
-  const sm = L.marker(points[0], { icon: startIcon() })
-    .bindPopup(`<div class="pop-name">📍 Partida</div><div class="pop-addr">${escapeHTML(currentRoute.start.display || "Sua localização")}</div>`)
-    .addTo(map);
-  routeMarkers.push(sm);
-
-  // numbered stop markers
-  currentRoute.stops.forEach((s, i) => {
-    const m = L.marker([s.lat, s.lon], { icon: numIcon(i+1) })
-      .bindPopup(`
-        <div class="pop-name">#${i+1} · ${escapeHTML(s.name)}</div>
-        <div class="pop-flavor">${escapeHTML(s.flavor)}</div>
-        <div class="pop-addr">📍 ${escapeHTML(s.address)} · ${escapeHTML(s.district)}</div>
-        <button class="pop-btn ${visited.has(s.id) ? "done" : ""}" data-id="${s.id}">
-          ${visited.has(s.id) ? "✓ Visitada" : "Marcar como visitada"}
-        </button>`)
-      .on("popupopen", e => {
-        const btn = e.popup.getElement().querySelector("button[data-id]");
-        if (btn) btn.addEventListener("click", () => toggle(s.id));
-      });
-    m.addTo(map);
-    routeMarkers.push(m);
-  });
-
-  document.getElementById("map-legend").innerHTML = `
-    <div class="row"><span class="dot" style="background:var(--ink)"></span>Partida</div>
-    <div class="row"><span class="dot" style="background:#6a5acd"></span>Próximas paradas</div>`;
-
-  map.fitBounds(L.latLngBounds(points), { padding: [50, 50] });
 }
 
 function googleMapsUrl(route) {
@@ -975,10 +1034,7 @@ function googleMapsUrl(route) {
   const destStr = `${dest.lat},${dest.lon}`;
   const waypoints = route.stops.slice(0, -1).map(s => `${s.lat},${s.lon}`).join("|");
   const params = new URLSearchParams({
-    api: "1",
-    origin: o,
-    destination: destStr,
-    travelmode: "walking",
+    api: "1", origin: o, destination: destStr, travelmode: "walking",
   });
   if (waypoints) params.set("waypoints", waypoints);
   return `https://www.google.com/maps/dir/?${params.toString()}`;
@@ -990,7 +1046,7 @@ function renderRouteResult() {
   if (!currentRoute) { root.innerHTML = ""; clearBtn.style.display = "none"; return; }
   clearBtn.style.display = "";
   const r = currentRoute;
-  const minutes = Math.round((r.totalKm / 4.5) * 60); // 4.5 km/h walking + stops
+  const minutes = Math.round((r.totalKm / 4.5) * 60);
   let html = `
     <div class="summary">
       <div class="stat"><div class="label">Paradas</div><div class="val">${r.stops.length}</div></div>
@@ -1046,7 +1102,7 @@ async function handlePlan() {
   const maxStops = parseInt(document.getElementById("max-stops").value, 10) || 8;
   const maxKmRaw = parseFloat(document.getElementById("max-km").value);
   const maxKm = isFinite(maxKmRaw) ? maxKmRaw : 0;
-  const onlyTodo = document.getElementById("only-todo").checked;
+  const includeMode = document.getElementById("include-mode").value;
   const filterDistrict = document.getElementById("filter-district").checked;
   const districtVal = document.getElementById("district-restrict").value;
 
@@ -1056,13 +1112,17 @@ async function handlePlan() {
   catch (e) { status.textContent = "Falha ao buscar. Tenta de novo."; btn.disabled = false; return; }
   if (!geo) { status.textContent = "Endereço não encontrado. Tenta ser mais específico (rua + nº + Berlin)."; btn.disabled = false; return; }
 
-  const candidates = places
-    .filter(p => p.lat && p.lon)
-    .filter(p => onlyTodo ? !visited.has(p.id) : true)
-    .filter(p => filterDistrict && districtVal ? p.district === districtVal : true);
+  let candidates = places.filter(p => p.lat && p.lon);
+  if (includeMode === "todo")   candidates = candidates.filter(p => !visited.has(p.id));
+  if (includeMode === "wished") candidates = candidates.filter(p =>  wished.has(p.id));
+  if (filterDistrict && districtVal) candidates = candidates.filter(p => p.district === districtVal);
 
   if (!candidates.length) {
-    status.textContent = "Sem sorveterias para incluir com esses filtros.";
+    if (includeMode === "wished") {
+      status.textContent = "Você ainda não salvou nenhuma sorveteria. Vai na aba Lista e salve algumas com o ♥.";
+    } else {
+      status.textContent = "Sem sorveterias para incluir com esses filtros.";
+    }
     btn.disabled = false; return;
   }
 
@@ -1075,9 +1135,10 @@ async function handlePlan() {
   }
   currentRoute = route;
   saveRoute();
+  setMapMode("route");
   renderRouteResult();
-  drawRouteOnMap();
-  updateProgress();
+  applyMapView();
+  updateStats();
   status.textContent = `✓ ${route.stops.length} paradas, ${route.totalKm.toFixed(1)} km`;
   btn.disabled = false;
   showToast(`Rota com ${route.stops.length} paradas pronta!`);
@@ -1087,24 +1148,24 @@ function clearRoute() {
   currentRoute = null;
   saveRoute();
   renderRouteResult();
-  drawRouteOnMap();
-  updateProgress();
+  applyMapView();
+  updateStats();
   document.getElementById("plan-status").textContent = "";
 }
 
-/* ---------- Routing / view ---------- */
+/* ---------- view routing ---------- */
 
 function applyRoute() {
   const tab = (location.hash.replace("#/","") || "lista");
   const valid = ["lista","mapa","rota"].includes(tab) ? tab : "lista";
   document.querySelectorAll(".view").forEach(v => v.classList.toggle("active", v.id === `view-${valid}`));
   document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("active", a.dataset.tab === valid));
-  const titleByTab = {
+  const titles = {
     lista: "Lista — Gelato Week 2026 Berlin",
     mapa:  "Mapa — Gelato Week 2026 Berlin",
     rota:  "Rota — Gelato Week 2026 Berlin",
   };
-  document.title = titleByTab[valid];
+  document.title = titles[valid];
   if (valid === "mapa") initMap();
   window.scrollTo({ top: 0, behavior: "instant" });
 }
@@ -1122,15 +1183,12 @@ function init() {
   document.getElementById("district-filter").addEventListener("change", renderList);
   document.getElementById("status-filter").addEventListener("change", renderList);
   document.getElementById("reset").addEventListener("click", () => {
-    if (!visited.size) return;
-    if (!confirm("Limpar todas as marcações?")) return;
-    visited.clear(); save();
-    renderList(); updateProgress();
-    for (const [id, m] of markers) {
-      m.setIcon(pinIcon(false));
-      const p = places.find(x => x.id === id);
-      m.setPopupContent(popupHTML(p));
-    }
+    if (!visited.size && !wished.size) return;
+    if (!confirm("Limpar todas as marcações (visitadas + salvas)?")) return;
+    visited.clear(); wished.clear();
+    saveVisited(); saveWished();
+    renderList(); updateStats();
+    for (const id of markers.keys()) refreshMarker(id);
   });
   document.getElementById("filter-district").addEventListener("change", e => {
     document.getElementById("district-restrict-row").style.display = e.target.checked ? "" : "none";
@@ -1138,12 +1196,14 @@ function init() {
   document.getElementById("plan-btn").addEventListener("click", handlePlan);
   document.getElementById("start-addr").addEventListener("keydown", e => { if (e.key === "Enter") handlePlan(); });
   document.getElementById("clear-route").addEventListener("click", clearRoute);
+  document.querySelectorAll(".map-mode-toggle button").forEach(b => {
+    b.addEventListener("click", () => setMapMode(b.dataset.mode));
+  });
   window.addEventListener("hashchange", applyRoute);
 
   if (!location.hash) location.hash = "#/lista";
-  renderList();
-  updateProgress();
-  renderRouteResult();
+  if (currentRoute) mapMode = "route";
+  renderList(); updateStats(); renderRouteResult();
   applyRoute();
 }
 init();
