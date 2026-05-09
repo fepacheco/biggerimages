@@ -1,0 +1,62 @@
+[
+  {"id":1,"name":"Baci Italiani","district":"Charlottenburg","address":"Theodor-Heuss-Platz 2, Berlin","flavor":"Dolce Bacio: tahini ice cream swirled with salted caramel and lotus"},
+  {"id":2,"name":"Café Roberta","district":"Charlottenburg","address":"Damaschkestr. 4, Berlin","flavor":"Persischer Sommer: cucumber sorbet with a sweet mint vinegar"},
+  {"id":3,"name":"Gimme Gelato Charlottenburg","district":"Charlottenburg","address":"Wundtstr. 15, Berlin","flavor":"Matcha latte"},
+  {"id":4,"name":"Klassen's Eis","district":"Charlottenburg","address":"Leibnizstr. 48, Berlin","flavor":"Olive oil and pine nut"},
+
+  {"id":5,"name":"Bio-Eiscafé Caramello","district":"Friedrichshain & Lichtenberg","address":"Wühlischstr. 31, Berlin","flavor":"Zen Tropics: creamy vegan matcha refined with coconut"},
+  {"id":6,"name":"Chipi Chipi Bombón","district":"Friedrichshain & Lichtenberg","address":"Warschauer Str. 12, Berlin","flavor":"Zabaione (alcoholic)"},
+  {"id":7,"name":"Green Scoop","district":"Friedrichshain & Lichtenberg","address":"Boxhagener Str. 71, Berlin","flavor":"Lukuma: dulce de leche"},
+  {"id":8,"name":"Jäätelö DieEisdiele","district":"Friedrichshain & Lichtenberg","address":"Zwieseler Str. 44, Berlin","flavor":"Vanilla and rhubarb crumble"},
+  {"id":9,"name":"Milchstraße Gelateria Italiana","district":"Friedrichshain & Lichtenberg","address":"Möllendorffstr. 45, Berlin","flavor":"Honeymoon: honey swirl with lemon-chocolate-crumble"},
+  {"id":10,"name":"NaturEis","district":"Friedrichshain & Lichtenberg","address":"Gärtnerstr. 2, Berlin","flavor":"Yogurt, apricot, almond and roasted cocoa beans"},
+  {"id":11,"name":"Peggy Bee","district":"Friedrichshain & Lichtenberg","address":"Weichselstr. 13, Berlin","flavor":"Spicy-Bitter Gianduia: hazelnut chocolate and Calabrian chili pepper"},
+  {"id":12,"name":"SchneeEISchen","district":"Friedrichshain & Lichtenberg","address":"Scharnweberstr. 20, Berlin","flavor":"Sweet, Salty & Baked: raspberry swirl in salted caramel with homemade buttery crumble"},
+  {"id":13,"name":"Spoonful Berlin (Friedrichshain)","district":"Friedrichshain & Lichtenberg","address":"Gärtnerstraße 33, Berlin","flavor":"Vanilla with aged balsamic & roasted hazelnuts"},
+
+  {"id":14,"name":"Berlin Homemade Icecream (Elßholzstr.)","district":"Schöneberg","address":"Elßholzstr. 10, Berlin","flavor":"Greek yogurt with matcha"},
+  {"id":15,"name":"Berlin Homemade Icecream (Lauterstr.)","district":"Schöneberg","address":"Lauterstr. 17, Berlin","flavor":"White chocolate with berries"},
+  {"id":16,"name":"Gimme Gelato BRLO","district":"Schöneberg","address":"Schöneberger Str. 16, Berlin","flavor":"Chai latte"},
+  {"id":17,"name":"Gimme Gelato Jules B-Part","district":"Schöneberg","address":"Luckenwalder Str. 6B, Berlin","flavor":"Coffee pecan crunch"},
+  {"id":18,"name":"KiezEis","district":"Schöneberg","address":"Winterfeldtstr. 46, Berlin","flavor":"Almond sorbet with cherry swirls"},
+
+  {"id":19,"name":"Alphi's Eis","district":"Prenzlauer Berg & Pankow","address":"Heynstr. 33, Berlin","flavor":"Watermelon Twist: watermelon, feta, mint, and tajin"},
+  {"id":20,"name":"B-Iced","district":"Prenzlauer Berg & Pankow","address":"Rennbahnstr. 21, Berlin","flavor":"Choco Orange Crunch: vegan chocolate with orange, basil, rosemary"},
+  {"id":21,"name":"Ben, Emi & Friends","district":"Prenzlauer Berg & Pankow","address":"Gleimstr. 54, Berlin","flavor":"Beurre Noisette Soft Eis: caramelized butter sundae"},
+  {"id":22,"name":"Berliner Eisbär","district":"Prenzlauer Berg & Pankow","address":"Naugarder Str. 16, Berlin","flavor":"Berlin Vanilla: vanilla paste, butter cookies and black currant"},
+  {"id":23,"name":"Eiscafé Il Buon Gelato","district":"Prenzlauer Berg & Pankow","address":"Achillesstr. 46, Berlin","flavor":"Määh statt Muuh!: goat milk harmony with mint, pear, and oat"},
+  {"id":24,"name":"Eisspatz","district":"Prenzlauer Berg & Pankow","address":"Schönstr. 1, Berlin","flavor":"Yogurt sorrel & nettle ice cream — Vegan: purple carrots with coconut and cinnamon"},
+  {"id":25,"name":"Giomecca","district":"Prenzlauer Berg & Pankow","address":"Erich-Weinert-Str. 3, Berlin","flavor":"Croccante: fior di latte with candied cherries, milk chocolate"},
+  {"id":26,"name":"Il Gelataio","district":"Prenzlauer Berg & Pankow","address":"Am Friedrichshain 6, Berlin","flavor":"Raspberry with balsamic vinegar"},
+  {"id":27,"name":"Süßfein (Rykestr.)","district":"Prenzlauer Berg & Pankow","address":"Rykestr. 50, Berlin","flavor":"Vanilla, miso caramel, and sesame"},
+
+  {"id":28,"name":"Artigiani","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Unter den Eichen 94B, Berlin","flavor":"Mediterraneo 2.0: olive oil gelato infused with rosemary"},
+  {"id":29,"name":"Artigiani am Schlachtensee","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Matterhornstr. 52, Berlin","flavor":"Tokyo Love: milk-based gelato with matcha tea and wasabi"},
+  {"id":30,"name":"Berliner Genussmanufaktur","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Curtiusstr. 8, Berlin","flavor":"Lemon Cheesecake: cookie dough with lemon curd"},
+  {"id":31,"name":"Bonoca Manufaktur","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Osdorfer Str. 93D, Berlin","flavor":"Blondie Brownie: light chocolate gelato blended with Chocogold"},
+  {"id":32,"name":"Eis Da Gianni (Lankwitz)","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Lankwitzer Str. 15, Berlin","flavor":"Homemade cashew butter, white chocolate and cranberry"},
+  {"id":33,"name":"La Pallina","district":"Lichterfelde, Steglitz & Zehlendorf","address":"Hortensienstr. 12B, Berlin","flavor":"Ofenschlupfer: vanilla-infused milk base with stale bread"},
+
+  {"id":34,"name":"Eiscafé Bürgerle","district":"Erkner","address":"Friedrichstr. 22B, Erkner","flavor":"Coconut with ananas and passion fruit"},
+
+  {"id":35,"name":"Caffè e Gelato","district":"Mitte","address":"Alte Potsdamer Str. 7, Berlin","flavor":"Yogurt Dream: Greek yogurt with pistachio crunch"},
+  {"id":36,"name":"Cuore di Vetro","district":"Mitte","address":"Max-Beer-Str. 33, Berlin","flavor":"Fall: salty caramel with crunchy nougat"},
+  {"id":37,"name":"Eis Da Gianni (Turmstr.)","district":"Mitte","address":"Turmstr. 35A, Berlin","flavor":"Champagne Grand Cru Rosé"},
+  {"id":38,"name":"La Dolceria aROMA (Friedrichstr. 110)","district":"Mitte","address":"Friedrichstr. 110, Berlin","flavor":"Tangerine kiss"},
+  {"id":39,"name":"La Dolceria aROMA (Friedrichstr. 81)","district":"Mitte","address":"Friedrichstr. 81, Berlin","flavor":"Lavender with lemon"},
+  {"id":40,"name":"My Daddy's Gelateria","district":"Mitte","address":"Grüntaler Str. 13, Berlin","flavor":"Mascarpone Mood: mascarpone, cream and fig swirls"},
+  {"id":41,"name":"Süßfein (Brunnenstr.)","district":"Mitte","address":"Brunnenstr. 156, Berlin","flavor":"Vanilla, miso caramel, and sesame"},
+
+  {"id":42,"name":"DaValentino","district":"Neukölln","address":"Alt-Rudow 63, Berlin","flavor":"Salty Ruby-Dream: pomegranate yogurt with salted pistachio"},
+  {"id":43,"name":"Lumi Gelato e Caffè","district":"Neukölln","address":"Karl-Marx-Str. 57, Berlin","flavor":"Indian Summer: mango, lime, salt and chili"},
+  {"id":44,"name":"Spoonful Berlin (Neukölln)","district":"Neukölln","address":"Weserstr. 6, Berlin","flavor":"White chocolate crunch and lemon ripple"},
+  {"id":45,"name":"Summertime","district":"Neukölln","address":"Weserstr. 45, Berlin","flavor":"Peach iced tea: white peach sorbet with Earl Grey"},
+
+  {"id":46,"name":"Die Eismacher","district":"Kreuzberg","address":"Körtestr. 10, Berlin","flavor":"Chamango — mango with chamoy: mango lime sorbet"},
+  {"id":47,"name":"Gelato Disco","district":"Kreuzberg","address":"Schleiermacherstr. 9, Berlin","flavor":"Yuzu Disco: Japanese citrus sorbet with walnut crunch"},
+  {"id":48,"name":"Gelato Rallo (Bergmannstr.)","district":"Kreuzberg","address":"Bergmannstr. 5, Berlin","flavor":"Blossom magic: strawberry, elderflower and mint"},
+  {"id":49,"name":"Gelato Rallo (Kottbusser Damm)","district":"Kreuzberg","address":"Kottbusser Damm 1, Berlin","flavor":"Strawberry-Matcha sorbet"},
+  {"id":50,"name":"Sen&Ben Eiscafé","district":"Kreuzberg","address":"Adalbertstr. 8, Berlin","flavor":"Ayran-Mango"},
+  {"id":51,"name":"Spoonful Berlin (Kreuzberg)","district":"Kreuzberg","address":"Graefestr. 7, Berlin","flavor":"Dark chocolate and beet with wafer crunch"},
+  {"id":52,"name":"Zàgara","district":"Kreuzberg","address":"Köpenicker Str. 4, Berlin","flavor":"Persia on my mind: apricot, pomegranate and cardamom"}
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "name": "Baci Italiani",
+    "district": "Charlottenburg",
+    "address": "Theodor-Heuss-Platz 2, Berlin",
+    "flavor": "Dolce Bacio: tahini ice cream swirled with salted caramel and lotus",
+    "lat": 52.5099931,
+    "lon": 13.2735201,
+    "geocode_display": "Eiscafé Mauritius, 2, Theodor-Heuss-Platz, Villenkolonie Westend, Westend, Charlottenburg-Wilmersdorf, Berlin, 14052, Deutschland"
+  },
+  {
+    "id": 2,
+    "name": "Café Roberta",
+    "district": "Charlottenburg",
+    "address": "Damaschkestr. 4, Berlin",
+    "flavor": "Persischer Sommer: cucumber sorbet with a sweet mint vinegar",
+    "lat": 52.4996966,
+    "lon": 13.3025556,
+    "geocode_display": "4, Damaschkestraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10711, Deutschland"
+  },
+  {
+    "id": 3,
+    "name": "Gimme Gelato Charlottenburg",
+    "district": "Charlottenburg",
+    "address": "Wundtstr. 15, Berlin",
+    "flavor": "Matcha latte",
+    "lat": 52.5120391,
+    "lon": 13.2940787,
+    "geocode_display": "15, Wundtstraße, Gierkekiez, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Deutschland"
+  },
+  {
+    "id": 4,
+    "name": "Klassen's Eis",
+    "district": "Charlottenburg",
+    "address": "Leibnizstr. 48, Berlin",
+    "flavor": "Olive oil and pine nut",
+    "lat": 52.5017546,
+    "lon": 13.3129938,
+    "geocode_display": "The Market, 48, Leibnizstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10629, Deutschland"
+  },
+  {
+    "id": 5,
+    "name": "Bio-Eiscafé Caramello",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Wühlischstr. 31, Berlin",
+    "flavor": "Zen Tropics: creamy vegan matcha refined with coconut",
+    "lat": 52.5099329,
+    "lon": 13.4573981,
+    "geocode_display": "31, Wühlischstraße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"
+  },
+  {
+    "id": 6,
+    "name": "Chipi Chipi Bombón",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Warschauer Str. 12, Berlin",
+    "flavor": "Zabaione (alcoholic)",
+    "lat": 52.5131962,
+    "lon": 13.4525181,
+    "geocode_display": "Chipi Chipi Bombón, 12, Warschauer Straße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland"
+  },
+  {
+    "id": 7,
+    "name": "Green Scoop",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Boxhagener Str. 71, Berlin",
+    "flavor": "Lukuma: dulce de leche",
+    "lat": 52.5067382,
+    "lon": 13.4693774,
+    "geocode_display": "71, Boxhagener Straße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"
+  },
+  {
+    "id": 8,
+    "name": "Jäätelö DieEisdiele",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Zwieseler Str. 44, Berlin",
+    "flavor": "Vanilla and rhubarb crumble",
+    "lat": 52.4879695,
+    "lon": 13.539313,
+    "geocode_display": "44, Zwieseler Straße, Gartenstadt Karlshorst, Rheinisches Viertel, Karlshorst, Lichtenberg, Berlin, 10318, Deutschland"
+  },
+  {
+    "id": 9,
+    "name": "Milchstraße Gelateria Italiana",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Möllendorffstr. 45, Berlin",
+    "flavor": "Honeymoon: honey swirl with lemon-chocolate-crumble",
+    "lat": 52.5238219,
+    "lon": 13.4800578,
+    "geocode_display": "Nierenzentrum Lichtenberg, 45, Möllendorffstraße, Fennpfuhl, Lichtenberg, Berlin, 10367, Deutschland"
+  },
+  {
+    "id": 10,
+    "name": "NaturEis",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Gärtnerstr. 2, Berlin",
+    "flavor": "Yogurt, apricot, almond and roasted cocoa beans",
+    "lat": 52.5083193,
+    "lon": 13.4603087,
+    "geocode_display": "2, Gärtnerstraße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland"
+  },
+  {
+    "id": 11,
+    "name": "Peggy Bee",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Weichselstr. 13, Berlin",
+    "flavor": "Spicy-Bitter Gianduia: hazelnut chocolate and Calabrian chili pepper",
+    "lat": 52.5114432,
+    "lon": 13.4688886,
+    "geocode_display": "13, Weichselstraße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland"
+  },
+  {
+    "id": 12,
+    "name": "SchneeEISchen",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Scharnweberstr. 20, Berlin",
+    "flavor": "Sweet, Salty & Baked: raspberry swirl in salted caramel with homemade buttery crumble",
+    "lat": 52.5128033,
+    "lon": 13.4673849,
+    "geocode_display": "20, Scharnweberstraße, Friedrichshain, Berlin"
+  },
+  {
+    "id": 13,
+    "name": "Spoonful Berlin (Friedrichshain)",
+    "district": "Friedrichshain & Lichtenberg",
+    "address": "Gärtnerstraße 33, Berlin",
+    "flavor": "Vanilla with aged balsamic & roasted hazelnuts",
+    "lat": 52.5084681,
+    "lon": 13.4595634,
+    "geocode_display": "33, Gärtnerstraße, Friedrichshain, Berlin"
+  },
+  {
+    "id": 14,
+    "name": "Berlin Homemade Icecream (Elßholzstr.)",
+    "district": "Schöneberg",
+    "address": "Elßholzstr. 10, Berlin",
+    "flavor": "Greek yogurt with matcha",
+    "lat": 52.4926651,
+    "lon": 13.3563712,
+    "geocode_display": "Berlin Homemade Icecream, 10, Elßholzstraße, Winterfeldtkiez, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10781, Deutschland"
+  },
+  {
+    "id": 15,
+    "name": "Berlin Homemade Icecream (Lauterstr.)",
+    "district": "Schöneberg",
+    "address": "Lauterstr. 17, Berlin",
+    "flavor": "White chocolate with berries",
+    "lat": 52.4716365,
+    "lon": 13.3350372,
+    "geocode_display": "Netto Marken-Discount, 17, Lauterstraße, Wagnerviertel, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland"
+  },
+  {
+    "id": 16,
+    "name": "Gimme Gelato BRLO",
+    "district": "Schöneberg",
+    "address": "Schöneberger Str. 16, Berlin",
+    "flavor": "Chai latte",
+    "lat": 52.5000124,
+    "lon": 13.3733584,
+    "geocode_display": "Brło-Biergarten, 16, Schöneberger Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland"
+  },
+  {
+    "id": 17,
+    "name": "Gimme Gelato Jules B-Part",
+    "district": "Schöneberg",
+    "address": "Luckenwalder Str. 6B, Berlin",
+    "flavor": "Coffee pecan crunch",
+    "lat": 52.499062,
+    "lon": 13.3733828,
+    "geocode_display": "B-Part, 6b, Luckenwalder Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland"
+  },
+  {
+    "id": 18,
+    "name": "KiezEis",
+    "district": "Schöneberg",
+    "address": "Winterfeldtstr. 46, Berlin",
+    "flavor": "Almond sorbet with cherry swirls",
+    "lat": 52.4970971,
+    "lon": 13.353303,
+    "geocode_display": "Moranga, 46, Winterfeldtstraße, Winterfeldtkiez, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10781, Deutschland"
+  },
+  {
+    "id": 19,
+    "name": "Alphi's Eis",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Heynstr. 33, Berlin",
+    "flavor": "Watermelon Twist: watermelon, feta, mint, and tajin",
+    "lat": 52.5653026,
+    "lon": 13.40279,
+    "geocode_display": "33, Heynstraße, Florakiez, Pankow, Berlin, 13187, Deutschland"
+  },
+  {
+    "id": 20,
+    "name": "B-Iced",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Rennbahnstr. 21, Berlin",
+    "flavor": "Choco Orange Crunch: vegan chocolate with orange, basil, rosemary",
+    "lat": 52.5602357,
+    "lon": 13.4593536,
+    "geocode_display": "B'ICED, 21, Rennbahnstraße, Munizipalviertel, Weißensee, Pankow, Berlin, 13086, Deutschland"
+  },
+  {
+    "id": 21,
+    "name": "Ben, Emi & Friends",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Gleimstr. 54, Berlin",
+    "flavor": "Beurre Noisette Soft Eis: caramelized butter sundae",
+    "lat": 52.5469486,
+    "lon": 13.4036259,
+    "geocode_display": "Holy Everest, 54, Gleimstraße, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10437, Deutschland"
+  },
+  {
+    "id": 22,
+    "name": "Berliner Eisbär",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Naugarder Str. 16, Berlin",
+    "flavor": "Berlin Vanilla: vanilla paste, butter cookies and black currant",
+    "lat": 52.5450305,
+    "lon": 13.437556,
+    "geocode_display": "16, Naugarder Straße, Wohnstadt Carl Legien, Mühlenviertel, Prenzlauer Berg, Pankow, Berlin, 10409, Deutschland"
+  },
+  {
+    "id": 23,
+    "name": "Eiscafé Il Buon Gelato",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Achillesstr. 46, Berlin",
+    "flavor": "Määh statt Muuh!: goat milk harmony with mint, pear, and oat",
+    "lat": 52.6183215,
+    "lon": 13.4863499,
+    "geocode_display": "46, Achillesstraße, Stadtrandsiedlung Buch, Karow-Nord, Karow, Pankow, Berlin, 13125, Deutschland"
+  },
+  {
+    "id": 24,
+    "name": "Eisspatz",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Schönstr. 1, Berlin",
+    "flavor": "Yogurt sorrel & nettle ice cream — Vegan: purple carrots with coconut and cinnamon",
+    "lat": 52.5529655,
+    "lon": 13.4495406,
+    "geocode_display": "Eisspatz, 1, Schönstraße, Munizipalviertel, Weißensee, Pankow, Berlin, 13086, Deutschland"
+  },
+  {
+    "id": 25,
+    "name": "Giomecca",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Erich-Weinert-Str. 3, Berlin",
+    "flavor": "Croccante: fior di latte with candied cherries, milk chocolate",
+    "lat": 52.5521181,
+    "lon": 13.4149103,
+    "geocode_display": "Giomecca, 3, Erich-Weinert-Straße, Humann-Kiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland"
+  },
+  {
+    "id": 26,
+    "name": "Il Gelataio",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Am Friedrichshain 6, Berlin",
+    "flavor": "Raspberry with balsamic vinegar",
+    "lat": 52.5294256,
+    "lon": 13.4345576,
+    "geocode_display": "6, Am Friedrichshain, Bötzowkiez, Prenzlauer Berg, Pankow, Berlin, 10407, Deutschland"
+  },
+  {
+    "id": 27,
+    "name": "Süßfein (Rykestr.)",
+    "district": "Prenzlauer Berg & Pankow",
+    "address": "Rykestr. 50, Berlin",
+    "flavor": "Vanilla, miso caramel, and sesame",
+    "lat": 52.5355454,
+    "lon": 13.4195071,
+    "geocode_display": "Park-Klinik & Lipoklinik Berlin, 50, Rykestraße, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland"
+  },
+  {
+    "id": 28,
+    "name": "Artigiani",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Unter den Eichen 94B, Berlin",
+    "flavor": "Mediterraneo 2.0: olive oil gelato infused with rosemary",
+    "lat": 52.4449734,
+    "lon": 13.2928096,
+    "geocode_display": "94b, Unter den Eichen, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12205, Deutschland"
+  },
+  {
+    "id": 29,
+    "name": "Artigiani am Schlachtensee",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Matterhornstr. 52, Berlin",
+    "flavor": "Tokyo Love: milk-based gelato with matcha tea and wasabi",
+    "lat": 52.4388412,
+    "lon": 13.2168678,
+    "geocode_display": "Viet Hello BBQ, 52, Matterhornstraße, Siedlung Schlachtensee II, Schlachtensee, Steglitz-Zehlendorf, Berlin, 14129, Deutschland"
+  },
+  {
+    "id": 30,
+    "name": "Berliner Genussmanufaktur",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Curtiusstr. 8, Berlin",
+    "flavor": "Lemon Cheesecake: cookie dough with lemon curd",
+    "lat": 52.4426673,
+    "lon": 13.2950338,
+    "geocode_display": "8, Curtiusstraße, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12205, Deutschland"
+  },
+  {
+    "id": 31,
+    "name": "Bonoca Manufaktur",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Osdorfer Str. 93D, Berlin",
+    "flavor": "Blondie Brownie: light chocolate gelato blended with Chocogold",
+    "lat": 52.4126716,
+    "lon": 13.3204568,
+    "geocode_display": "93D, Osdorfer Straße, Lilienthal Siedlung, Lichterfelde Süd, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12207, Deutschland"
+  },
+  {
+    "id": 32,
+    "name": "Eis Da Gianni (Lankwitz)",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Lankwitzer Str. 15, Berlin",
+    "flavor": "Homemade cashew butter, white chocolate and cranberry",
+    "lat": 52.4368894,
+    "lon": 13.3753225,
+    "geocode_display": "15, Lankwitzer Straße, Mariendorf, Tempelhof-Schöneberg, Berlin, 12107, Deutschland"
+  },
+  {
+    "id": 33,
+    "name": "La Pallina",
+    "district": "Lichterfelde, Steglitz & Zehlendorf",
+    "address": "Hortensienstr. 12B, Berlin",
+    "flavor": "Ofenschlupfer: vanilla-infused milk base with stale bread",
+    "lat": 52.4483147,
+    "lon": 13.3056875,
+    "geocode_display": "12B, Hortensienstraße, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12203, Deutschland"
+  },
+  {
+    "id": 34,
+    "name": "Eiscafé Bürgerle",
+    "district": "Erkner",
+    "address": "Friedrichstr. 22B, Erkner",
+    "flavor": "Coconut with ananas and passion fruit",
+    "lat": 52.4216509,
+    "lon": 13.7530931,
+    "geocode_display": "Eiscafé Bürgerle, 22B, Friedrichstraße, Zentrum, Erkner, Oder-Spree, Brandenburg, 15537, Deutschland"
+  },
+  {
+    "id": 35,
+    "name": "Caffè e Gelato",
+    "district": "Mitte",
+    "address": "Alte Potsdamer Str. 7, Berlin",
+    "flavor": "Yogurt Dream: Greek yogurt with pistachio crunch",
+    "lat": 52.5074122,
+    "lon": 13.3741147,
+    "geocode_display": "The Playce, 7, Alte Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Deutschland"
+  },
+  {
+    "id": 36,
+    "name": "Cuore di Vetro",
+    "district": "Mitte",
+    "address": "Max-Beer-Str. 33, Berlin",
+    "flavor": "Fall: salty caramel with crunchy nougat",
+    "lat": 52.5265876,
+    "lon": 13.4085992,
+    "geocode_display": "Cuore Di Vetro, 33, Max-Beer-Straße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Deutschland"
+  },
+  {
+    "id": 37,
+    "name": "Eis Da Gianni (Turmstr.)",
+    "district": "Mitte",
+    "address": "Turmstr. 35A, Berlin",
+    "flavor": "Champagne Grand Cru Rosé",
+    "lat": 52.5267149,
+    "lon": 13.3373952,
+    "geocode_display": "35a, Turmstraße, Alt-Moabit, Arminiuskiez, Moabit, Mitte, Berlin, 10551, Deutschland"
+  },
+  {
+    "id": 38,
+    "name": "La Dolceria aROMA (Friedrichstr. 110)",
+    "district": "Mitte",
+    "address": "Friedrichstr. 110, Berlin",
+    "flavor": "Tangerine kiss",
+    "lat": 52.5249468,
+    "lon": 13.3877588,
+    "geocode_display": "110, Friedrichstraße, Dorotheenstadt, Mitte, Berlin, 10117, Deutschland"
+  },
+  {
+    "id": 39,
+    "name": "La Dolceria aROMA (Friedrichstr. 81)",
+    "district": "Mitte",
+    "address": "Friedrichstr. 81, Berlin",
+    "flavor": "Lavender with lemon",
+    "lat": 52.5153826,
+    "lon": 13.3892968,
+    "geocode_display": "81, Friedrichstraße, Mitte, Berlin"
+  },
+  {
+    "id": 40,
+    "name": "My Daddy's Gelateria",
+    "district": "Mitte",
+    "address": "Grüntaler Str. 13, Berlin",
+    "flavor": "Mascarpone Mood: mascarpone, cream and fig swirls",
+    "lat": 52.5524095,
+    "lon": 13.3873083,
+    "geocode_display": "13, Grüntaler Straße, Gartenstadt Atlantic, Soldiner Kiez, Gesundbrunnen, Mitte, Berlin, 13357, Deutschland"
+  },
+  {
+    "id": 41,
+    "name": "Süßfein (Brunnenstr.)",
+    "district": "Mitte",
+    "address": "Brunnenstr. 156, Berlin",
+    "flavor": "Vanilla, miso caramel, and sesame",
+    "lat": 52.5354851,
+    "lon": 13.3974626,
+    "geocode_display": "156, Brunnenstraße, Arkonakiez, Mitte, Berlin, 10115, Deutschland"
+  },
+  {
+    "id": 42,
+    "name": "DaValentino",
+    "district": "Neukölln",
+    "address": "Alt-Rudow 63, Berlin",
+    "flavor": "Salty Ruby-Dream: pomegranate yogurt with salted pistachio",
+    "lat": 52.4172696,
+    "lon": 13.4966938,
+    "geocode_display": "63, Alt-Rudow, Blumenviertel, Rudow, Neukölln, Berlin, 12355, Deutschland"
+  },
+  {
+    "id": 43,
+    "name": "Lumi Gelato e Caffè",
+    "district": "Neukölln",
+    "address": "Karl-Marx-Str. 57, Berlin",
+    "flavor": "Indian Summer: mango, lime, salt and chili",
+    "lat": 52.4829779,
+    "lon": 13.432156,
+    "geocode_display": "Tonerdumping, 57, Karl-Marx-Straße, Donaukiez, Neukölln, Berlin, 12043, Deutschland"
+  },
+  {
+    "id": 44,
+    "name": "Spoonful Berlin (Neukölln)",
+    "district": "Neukölln",
+    "address": "Weserstr. 6, Berlin",
+    "flavor": "White chocolate crunch and lemon ripple",
+    "lat": 52.4882098,
+    "lon": 13.4274772,
+    "geocode_display": "Eismanufaktur Spoonful, 6, Weserstraße, Reuterkiez, Neukölln, Berlin, 12047, Deutschland"
+  },
+  {
+    "id": 45,
+    "name": "Summertime",
+    "district": "Neukölln",
+    "address": "Weserstr. 45, Berlin",
+    "flavor": "Peach iced tea: white peach sorbet with Earl Grey",
+    "lat": 52.5081584,
+    "lon": 13.4706569,
+    "geocode_display": "45, Weserstraße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland"
+  },
+  {
+    "id": 46,
+    "name": "Die Eismacher",
+    "district": "Kreuzberg",
+    "address": "Körtestr. 10, Berlin",
+    "flavor": "Chamango — mango with chamoy: mango lime sorbet",
+    "lat": 52.4912888,
+    "lon": 13.4110988,
+    "geocode_display": "Swingspiration, 10, Körtestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"
+  },
+  {
+    "id": 47,
+    "name": "Gelato Disco",
+    "district": "Kreuzberg",
+    "address": "Schleiermacherstr. 9, Berlin",
+    "flavor": "Yuzu Disco: Japanese citrus sorbet with walnut crunch",
+    "lat": 52.4926791,
+    "lon": 13.3982593,
+    "geocode_display": "9, Schleiermacherstraße, Chamissokiez, Bergmannkiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland"
+  },
+  {
+    "id": 48,
+    "name": "Gelato Rallo (Bergmannstr.)",
+    "district": "Kreuzberg",
+    "address": "Bergmannstr. 5, Berlin",
+    "flavor": "Blossom magic: strawberry, elderflower and mint",
+    "lat": 52.4893528,
+    "lon": 13.388948,
+    "geocode_display": "5, Bergmannstraße, Kreuzberg, Berlin"
+  },
+  {
+    "id": 49,
+    "name": "Gelato Rallo (Kottbusser Damm)",
+    "district": "Kreuzberg",
+    "address": "Kottbusser Damm 1, Berlin",
+    "flavor": "Strawberry-Matcha sorbet",
+    "lat": 52.4954179,
+    "lon": 13.4202243,
+    "geocode_display": "Cicala Caffetteria Italiana, 1, Kottbusser Damm, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"
+  },
+  {
+    "id": 50,
+    "name": "Sen&Ben Eiscafé",
+    "district": "Kreuzberg",
+    "address": "Adalbertstr. 8, Berlin",
+    "flavor": "Ayran-Mango",
+    "lat": 52.5003371,
+    "lon": 13.4195534,
+    "geocode_display": "Clue, 8, Adalbertstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland"
+  },
+  {
+    "id": 51,
+    "name": "Spoonful Berlin (Kreuzberg)",
+    "district": "Kreuzberg",
+    "address": "Graefestr. 7, Berlin",
+    "flavor": "Dark chocolate and beet with wafer crunch",
+    "lat": 52.494657,
+    "lon": 13.4183265,
+    "geocode_display": "7, Graefestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland"
+  },
+  {
+    "id": 52,
+    "name": "Zàgara",
+    "district": "Kreuzberg",
+    "address": "Köpenicker Str. 4, Berlin",
+    "flavor": "Persia on my mind: apricot, pomegranate and cardamom",
+    "lat": 52.442848,
+    "lon": 13.5077401,
+    "geocode_display": "4, Köpenicker Straße, Alt-Johannisthal, Johannisthal-Süd, Johannisthal, Treptow-Köpenick, Berlin, 12487, Deutschland"
+  }
+]
