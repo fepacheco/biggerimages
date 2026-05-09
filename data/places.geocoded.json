@@ -445,9 +445,9 @@
     "district": "Neukölln",
     "address": "Weserstr. 45, Berlin",
     "flavor": "Peach iced tea: white peach sorbet with Earl Grey",
-    "lat": 52.5081584,
-    "lon": 13.4706569,
-    "geocode_display": "45, Weserstraße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland"
+    "lat": 52.4845092,
+    "lon": 13.4382938,
+    "geocode_display": "45, Weserstraße, Donaukiez, Neukölln, Berlin, 12045, Deutschland"
   },
   {
     "id": 46,
@@ -515,8 +515,8 @@
     "district": "Kreuzberg",
     "address": "Köpenicker Str. 4, Berlin",
     "flavor": "Persia on my mind: apricot, pomegranate and cardamom",
-    "lat": 52.442848,
-    "lon": 13.5077401,
-    "geocode_display": "4, Köpenicker Straße, Alt-Johannisthal, Johannisthal-Süd, Johannisthal, Treptow-Köpenick, Berlin, 12487, Deutschland"
+    "lat": 52.5018969,
+    "lon": 13.4407344,
+    "geocode_display": "Zàgara, 4, Köpenicker Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Deutschland"
   }
 ]
