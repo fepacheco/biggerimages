@@ -6,14 +6,16 @@ Fonte dos dados: <https://true-italian.com/gelato-week-2026-berlin/>
 
 ## Como abrir
 
-Abra com qualquer servidor estático na raiz do repo:
+O `index.html` é self-contained (dados embutidos), então você tem 3 opções:
 
-```bash
-python3 -m http.server 8000
-# depois acesse http://localhost:8000/
-```
-
-(Precisa servir via HTTP por causa do `fetch('data/places.geocoded.json')` — abrir o `index.html` direto pelo `file://` não funciona.)
+1. **Direto, sem servidor** — baixe o `index.html` e dê duplo-clique. Funciona via `file://`.
+2. **URL pública** (CDN do GitHub):
+   <https://raw.githack.com/fepacheco/biggerimages/claude/gelato-map-checklist-app-1Kwli/index.html>
+3. **Servidor local** (se preferir):
+   ```bash
+   python3 -m http.server 8000
+   # http://localhost:8000/
+   ```
 
 ## Funcionalidades
 
